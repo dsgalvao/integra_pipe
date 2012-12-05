@@ -1,0 +1,57 @@
+<%= form_for(@organization) do |f| %>
+  <% if @organization.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@organization.errors.count, "error") %> prohibited this organization from being saved:</h2>
+
+      <ul>
+      <% @organization.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :pipedrive_id %><br />
+    <%= f.number_field :pipedrive_id %>
+  </div>
+  <div class="field">
+    <%= f.label :my_finance_id %><br />
+    <%= f.number_field :my_finance_id %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :segmento %><br />
+    <%= f.text_field :segmento %>
+  </div>
+  <div class="field">
+    <%= f.label :razao_social %><br />
+    <%= f.text_field :razao_social %>
+  </div>
+  <div class="field">
+    <%= f.label :fisica_juridica %><br />
+    <%= f.number_field :fisica_juridica %>
+  </div>
+  <div class="field">
+    <%= f.label :cpf_cnpj %><br />
+    <%= f.text_field :cpf_cnpj %>
+  </div>
+  <div class="field">
+    <%= f.label :url %><br />
+    <%= f.text_field :url %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :update_time %><br />
+    <%= f.datetime_select :update_time %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

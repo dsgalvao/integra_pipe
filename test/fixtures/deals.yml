@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  pipedrive_id: 1
+  public_id: 1
+  company_id: 1
+  user_id: 1
+  user_email: MyString
+  person_name: MyString
+  org_name: MyString
+  title: MyString
+  value: 9.99
+  currency: MyString
+  products_count: 1
+  feira_id: MyString
+
+two:
+  pipedrive_id: 1
+  public_id: 1
+  company_id: 1
+  user_id: 1
+  user_email: MyString
+  person_name: MyString
+  org_name: MyString
+  title: MyString
+  value: 9.99
+  currency: MyString
+  products_count: 1
+  feira_id: MyString

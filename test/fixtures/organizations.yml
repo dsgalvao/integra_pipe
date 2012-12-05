@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  pipedrive_id: 1
+  my_finance_id: 1
+  name: MyString
+  segmento: MyString
+  razao_social: MyString
+  fisica_juridica: 1
+  cpf_cnpj: MyString
+  url: MyString
+  email: MyString
+  update_time: 2012-10-30 22:06:10
+
+two:
+  pipedrive_id: 1
+  my_finance_id: 1
+  name: MyString
+  segmento: MyString
+  razao_social: MyString
+  fisica_juridica: 1
+  cpf_cnpj: MyString
+  url: MyString
+  email: MyString
+  update_time: 2012-10-30 22:06:10

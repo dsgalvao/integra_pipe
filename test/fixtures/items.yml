@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  unique_id: 1
+  pipe_deal_id: 1
+  order_nr: 1
+  product_id: 1
+  item_price: 9.99
+  sum: 9.99
+  currency: MyString
+  name: MyString
+  quantity: 1
+  product_code: MyString
+
+two:
+  unique_id: 1
+  pipe_deal_id: 1
+  order_nr: 1
+  product_id: 1
+  item_price: 9.99
+  sum: 9.99
+  currency: MyString
+  name: MyString
+  quantity: 1
+  product_code: MyString

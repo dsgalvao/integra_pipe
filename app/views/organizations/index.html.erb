@@ -1,0 +1,41 @@
+<h1>Listing organizations</h1>
+
+<table>
+  <tr>
+    <th>Pipedrive</th>
+    <th>My finance</th>
+    <th>Name</th>
+    <th>Segmento</th>
+    <th>Razao social</th>
+    <th>Fisica juridica</th>
+    <th>Cpf cnpj</th>
+    <th>Url</th>
+    <th>Email</th>
+    <th>Update time</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @organizations.each do |organization| %>
+  <tr>
+    <td><%= organization.pipedrive_id %></td>
+    <td><%= organization.my_finance_id %></td>
+    <td><%= organization.name %></td>
+    <td><%= organization.segmento %></td>
+    <td><%= organization.razao_social %></td>
+    <td><%= organization.fisica_juridica %></td>
+    <td><%= organization.cpf_cnpj %></td>
+    <td><%= organization.url %></td>
+    <td><%= organization.email %></td>
+    <td><%= organization.update_time %></td>
+    <td><%= link_to 'Show', organization %></td>
+    <td><%= link_to 'Edit', edit_organization_path(organization) %></td>
+    <td><%= link_to 'Destroy', organization, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Organization', new_organization_path %>

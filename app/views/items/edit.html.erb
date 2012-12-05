@@ -1,0 +1,6 @@
+<h1>Editing item do deal <%= @deal.pipedrive_id %></h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Show', [@deal, @item] %> |
+<%= link_to 'Back', deal_items_path(@deal) %>

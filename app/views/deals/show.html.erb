@@ -1,0 +1,66 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Pipedrive:</b>
+  <%= @deal.pipedrive_id %>
+</p>
+
+<p>
+  <b>Public:</b>
+  <%= @deal.public_id %>
+</p>
+
+<p>
+  <b>Company:</b>
+  <%= @deal.company_id %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @deal.user_id %>
+</p>
+
+<p>
+  <b>User email:</b>
+  <%= @deal.user_email %>
+</p>
+
+<p>
+  <b>Person name:</b>
+  <%= @deal.person_name %>
+</p>
+
+<p>
+  <b>Org name:</b>
+  <%= @deal.org_name %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @deal.title %>
+</p>
+
+<p>
+  <b>Value:</b>
+  <%= @deal.value %>
+</p>
+
+<p>
+  <b>Currency:</b>
+  <%= @deal.currency %>
+</p>
+
+<p>
+  <b>Products count:</b>
+  <%= @deal.products_count %>
+</p>
+
+<p>
+  <b>Feira:</b>
+  <%= @deal.feira_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_deal_path(@deal) %> |
+<%= link_to 'Items', deal_items_path(@deal) %> |
+<%= link_to 'Back', deals_path %>

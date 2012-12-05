@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Pipedrive:</b>
+  <%= @organization.pipedrive_id %>
+</p>
+
+<p>
+  <b>My finance:</b>
+  <%= @organization.my_finance_id %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @organization.name %>
+</p>
+
+<p>
+  <b>Segmento:</b>
+  <%= @organization.segmento %>
+</p>
+
+<p>
+  <b>Razao social:</b>
+  <%= @organization.razao_social %>
+</p>
+
+<p>
+  <b>Fisica juridica:</b>
+  <%= @organization.fisica_juridica %>
+</p>
+
+<p>
+  <b>Cpf cnpj:</b>
+  <%= @organization.cpf_cnpj %>
+</p>
+
+<p>
+  <b>Url:</b>
+  <%= @organization.url %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @organization.email %>
+</p>
+
+<p>
+  <b>Update time:</b>
+  <%= @organization.update_time %>
+</p>
+
+
+<%= link_to 'Edit', edit_organization_path(@organization) %> |
+<%= link_to 'Back', organizations_path %>

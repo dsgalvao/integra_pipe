@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Unique:</b>
+  <%= @item.unique_id %>
+</p>
+
+<p>
+  <b>Pipe deal:</b>
+  <%= @item.pipe_deal_id %>
+</p>
+
+<p>
+  <b>Order nr:</b>
+  <%= @item.order_nr %>
+</p>
+
+<p>
+  <b>Product:</b>
+  <%= @item.product_id %>
+</p>
+
+<p>
+  <b>Item price:</b>
+  <%= @item.item_price %>
+</p>
+
+<p>
+  <b>Sum:</b>
+  <%= @item.sum %>
+</p>
+
+<p>
+  <b>Currency:</b>
+  <%= @item.currency %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @item.name %>
+</p>
+
+<p>
+  <b>Quantity:</b>
+  <%= @item.quantity %>
+</p>
+
+<p>
+  <b>Product code:</b>
+  <%= @item.product_code %>
+</p>
+
+
+<%= link_to 'Edit', edit_deal_item_path(@deal, @item) %> |
+<%= link_to 'Back', deal_items_path %>

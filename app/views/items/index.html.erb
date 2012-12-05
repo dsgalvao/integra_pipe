@@ -1,0 +1,48 @@
+<h1>Items para Deal <%= @deal.pipedrive_id %></h1>
+
+<% if !@deal.items.empty? %>
+  <table>
+    <tr>
+      <th>Unique</th>
+      <th>Pipe deal</th>
+      <th>Order nr</th>
+      <th>Product</th>
+      <th>Item price</th>
+      <th>Sum</th>
+      <th>Currency</th>
+      <th>Name</th>
+      <th>Quantity</th>
+      <th>Product code</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+
+<% @items.each do |item| %>
+  <tr>
+    <td><%= item.unique_id %></td>
+    <td><%= item.pipe_deal_id %></td>
+    <td><%= item.order_nr %></td>
+    <td><%= item.product_id %></td>
+    <td><%= item.item_price %></td>
+    <td><%= item.sum %></td>
+    <td><%= item.currency %></td>
+    <td><%= item.name %></td>
+    <td><%= item.quantity %></td>
+    <td><%= item.product_code %></td>
+    <td><%= link_to 'Show', [@deal, item] %></td>
+    <td><%= link_to 'Edit', edit_deal_item_path(@deal, item) %></td>
+    <td><%= link_to 'Destroy', [@deal, item], :confirm => 'Voce tem certeza?',
+:method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+<% else %>
+  <p><%= @deal.pipedrive_id %> nao possui nenhum produto ainda.</p>
+<% end %>
+<p>
+<%= link_to 'New item', new_deal_item_path(@deal) %> |
+<%= link_to 'Back', @deal %>
+</p>

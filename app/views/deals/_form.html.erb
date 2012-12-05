@@ -1,0 +1,65 @@
+<%= form_for(@deal) do |f| %>
+  <% if @deal.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@deal.errors.count, "error") %> prohibited this deal from being saved:</h2>
+
+      <ul>
+      <% @deal.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :pipedrive_id %><br />
+    <%= f.number_field :pipedrive_id %>
+  </div>
+  <div class="field">
+    <%= f.label :public_id %><br />
+    <%= f.number_field :public_id %>
+  </div>
+  <div class="field">
+    <%= f.label :company_id %><br />
+    <%= f.number_field :company_id %>
+  </div>
+  <div class="field">
+    <%= f.label :user_id %><br />
+    <%= f.number_field :user_id %>
+  </div>
+  <div class="field">
+    <%= f.label :user_email %><br />
+    <%= f.text_field :user_email %>
+  </div>
+  <div class="field">
+    <%= f.label :person_name %><br />
+    <%= f.text_field :person_name %>
+  </div>
+  <div class="field">
+    <%= f.label :org_name %><br />
+    <%= f.text_field :org_name %>
+  </div>
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :value %><br />
+    <%= f.text_field :value %>
+  </div>
+  <div class="field">
+    <%= f.label :currency %><br />
+    <%= f.text_field :currency %>
+  </div>
+  <div class="field">
+    <%= f.label :products_count %><br />
+    <%= f.number_field :products_count %>
+  </div>
+  <div class="field">
+    <%= f.label :feira_id %><br />
+    <%= f.text_field :feira_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

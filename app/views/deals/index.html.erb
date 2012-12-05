@@ -1,0 +1,47 @@
+<h1>Listing deals</h1>
+
+<table>
+  <tr>
+    <th>Pipedrive</th>
+    <th>Public</th>
+    <th>Company</th>
+    <th>User</th>
+    <th>User email</th>
+    <th>Person name</th>
+    <th>Org name</th>
+    <th>Title</th>
+    <th>Value</th>
+    <th>Currency</th>
+    <th>Products count</th>
+    <th>Feira</th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @deals.each do |deal| %>
+  <tr>
+    <td><%= deal.pipedrive_id %></td>
+    <td><%= deal.public_id %></td>
+    <td><%= deal.company_id %></td>
+    <td><%= deal.user_id %></td>
+    <td><%= deal.user_email %></td>
+    <td><%= deal.person_name %></td>
+    <td><%= deal.org_name %></td>
+    <td><%= deal.title %></td>
+    <td><%= deal.value %></td>
+    <td><%= deal.currency %></td>
+    <td><%= deal.products_count %></td>
+    <td><%= deal.feira_id %></td>
+    <td><%= link_to 'Exporta', deal %></td>
+    <td><%= link_to 'Edit', edit_deal_path(deal) %></td>
+    <td><%= link_to 'Items', deal_items_path(deal) %></td>
+    <td><%= link_to 'Destroy', deal, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Deal', new_deal_path %>
